@@ -1,0 +1,1159 @@
+/* ===================================================================
+ * # base style overrides
+ *
+ * ------------------------------------------------------------------- */
+html {
+    font-size: 10px;
+}
+
+@media only screen and (max-width: 400px) {
+    html {
+        font-size: 9.411764705882353px;
+    }
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    background: #111111;
+    font-family: "lora-regular", serif;
+    font-size: 1.7rem;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1.765;
+    color: #757575;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* ------------------------------------------------------------------- 
+ * ## links
+ * ------------------------------------------------------------------- */
+a {
+    color: #0087cc;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+a:hover, a:focus, a:active {
+    color: #39b54a;
+}
+
+a:hover, a:active {
+    outline: 0;
+}
+
+
+h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
+    margin-top: 6rem;
+    margin-bottom: 1.8rem;
+}
+
+@media only screen and (max-width: 600px) {
+    h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
+        margin-top: 5.1rem;
+    }
+}
+
+h5, .h5, h6, .h6 {
+    margin-top: 4.2rem;
+    margin-bottom: 1.5rem;
+}
+
+@media only screen and (max-width: 600px) {
+    h5, .h5, h6, .h6 {
+        margin-top: 3.6rem;
+        margin-bottom: 0.9rem;
+    }
+}
+
+h1, .h1 {
+    font-size: 3.6rem;
+    line-height: 1.25;
+    letter-spacing: -.1rem;
+}
+
+@media only screen and (max-width: 600px) {
+    h1, .h1 {
+        font-size: 3.3rem;
+        letter-spacing: -.07rem;
+    }
+}
+
+h2, .h2 {
+    font-size: 3rem;
+    line-height: 1.3;
+}
+
+h3, .h3 {
+    font-size: 2.4rem;
+    line-height: 1.25;
+}
+
+h4, .h4 {
+    font-size: 2.1rem;
+    line-height: 1.286;
+}
+
+h5, .h5 {
+    font-size: 1.6rem;
+    line-height: 1.313;
+}
+
+h6, .h6 {
+    font-size: 1.3rem;
+    line-height: 1.385;
+    text-transform: uppercase;
+    letter-spacing: .16rem;
+}
+
+p img {
+    margin: 0;
+}
+
+em, i, strong, b {
+    font-size: inherit;
+    line-height: inherit;
+    font-style: normal;
+    font-weight: normal;
+}
+
+em, i {
+    font-family: "lora-italic", serif;
+}
+
+strong, b {
+    font-family: "lora-bold", serif;
+}
+
+
+/* ===================================================================
+ * # forms
+ *
+ * ------------------------------------------------------------------- */
+fieldset {
+    border: none;
+}
+
+input[type="email"],
+input[type="number"],
+input[type="search"],
+input[type="text"],
+input[type="tel"],
+input[type="url"],
+input[type="password"],
+textarea,
+select {
+    display: block;
+    height: 6rem;
+    padding: 1.5rem 0;
+    border: 0;
+    outline: none;
+    color: #333333;
+    font-family: "montserrat-light", sans-serif;
+    font-size: 1.4rem;
+    line-height: 3rem;
+    max-width: 100%;
+    background: transparent;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.15);
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+/* ===================================================================
+ * # buttons
+ *
+ * ------------------------------------------------------------------- */
+.btn,
+button,
+input[type="submit"],
+input[type="reset"],
+input[type="button"] {
+    display: inline-block;
+    font-family: "montserrat-medium", sans-serif;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: .3rem;
+    height: 5.4rem;
+    line-height: calc(5.4rem - .4rem);
+    padding: 0 3rem;
+    margin: 0 .3rem 1.2rem 0;
+    color: #000000;
+    text-decoration: none;
+    text-align: center;
+    white-space: nowrap;
+    cursor: pointer;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #c5c5c5;
+    border: .2rem solid #c5c5c5;
+}
+
+.btn:hover,
+button:hover,
+input[type="submit"]:hover,
+input[type="reset"]:hover,
+input[type="button"]:hover,
+.btn:focus,
+button:focus,
+input[type="submit"]:focus,
+input[type="reset"]:focus,
+input[type="button"]:focus {
+    background-color: #b8b8b8;
+    border-color: #b8b8b8;
+    color: #000000;
+    outline: 0;
+}
+
+
+/* button primary
+ * ------------------------------------------------- */
+
+.btn.btn--primary,
+button.btn--primary,
+input[type="submit"].btn--primary,
+input[type="reset"].btn--primary,
+input[type="button"].btn--primary {
+    background: #39b54a;
+    border-color: #39b54a;
+    color: #FFFFFF;
+}
+
+.btn.btn--primary:hover,
+button.btn--primary:hover,
+input[type="submit"].btn--primary:hover,
+input[type="reset"].btn--primary:hover,
+input[type="button"].btn--primary:hover,
+.btn.btn--primary:focus,
+button.btn--primary:focus,
+input[type="submit"].btn--primary:focus,
+input[type="reset"].btn--primary:focus,
+input[type="button"].btn--primary:focus {
+    background: #33a242;
+    border-color: #33a242;
+}
+
+
+/* button modifiers
+ * ------------------------------------------------- */
+
+.btn.full-width, button.full-width {
+    width: 100%;
+    margin-right: 0;
+}
+
+.btn--medium, button.btn--medium {
+    height: 5.7rem !important;
+    line-height: calc(5.7rem - .4rem) !important;
+}
+
+.btn--large, button.btn--large {
+    height: 6rem !important;
+    line-height: calc(6rem - .4rem) !important;
+}
+
+.btn--stroke, button.btn--stroke {
+    background: transparent !important;
+    border: 0.2rem solid #39b54a;
+    color: #39b54a;
+}
+
+.btn--stroke:hover, button.btn--stroke:hover {
+    border: 0.2rem solid #000000;
+    color: #000000;
+}
+
+.btn--pill, button.btn--pill {
+    padding-left: 3rem !important;
+    padding-right: 3rem !important;
+    border-radius: 1000px !important;
+}
+
+button::-moz-focus-inner, input::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+}
+
+
+/* ------------------------------------------------------------------- 
+ * responsive:
+ * display headings
+ * ------------------------------------------------------------------- */
+@media only screen and (max-width: 1200px) {
+    
+    .display-2 {
+        font-size: 4.4rem;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    
+    .display-2 {
+        font-size: 4rem;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    
+    .display-2 {
+        font-size: 3.3rem;
+    }
+    .subhead {
+        font-size: 1.5rem;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    
+    .display-2 {
+        font-size: 3rem;
+    }
+}
+
+
+/* ------------------------------------------------------------------- 
+ * ## section header
+ * ------------------------------------------------------------------- */
+.section-header {
+    text-align: center;
+    position: relative;
+    margin-bottom: 3.6rem;
+    max-width: 960px;
+}
+
+/* ------------------------------------------------------------------- 
+ * responsive:
+ * section-header
+ * ------------------------------------------------------------------- */
+@media only screen and (max-width: 1200px) {
+    .section-header {
+        max-width: 800px;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .section-header {
+        max-width: 700px;
+    }
+}
+
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: .6;
+    background-color: #000000;
+}
+
+/* ------------------------------------------------------------------- 
+ * ## home animations
+ * ------------------------------------------------------------------- */
+
+
+/* fade in */
+
+@-webkit-keyframes fadeIn {
+    from {
+        opacity: 0;
+        -webkit-transform: translate3d(0, 150%, 0);
+        -ms-transform: translate3d(0, 150%, 0);
+        transform: translate3d(0, 150%, 0);
+    }
+    to {
+        opacity: 1;
+        -webkit-transform: translate3d(0, 0, 0);
+        -ms-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        -webkit-transform: translate3d(0, 150%, 0);
+        -ms-transform: translate3d(0, 150%, 0);
+        transform: translate3d(0, 150%, 0);
+    }
+    to {
+        opacity: 1;
+        -webkit-transform: translate3d(0, 0, 0);
+        -ms-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+
+/* fade out */
+
+@-webkit-keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+        -webkit-transform: translate3d(0, -150%, 0);
+        -ms-transform: translate3d(0, -150%, 0);
+        transform: translate3d(0, -150%, 0);
+    }
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+        -webkit-transform: translate3d(0, -150%, 0);
+        -ms-transform: translate3d(0, -150%, 0);
+        transform: translate3d(0, -150%, 0);
+    }
+}
+
+
+/* ===================================================================
+ * # contact 
+ *
+ * ------------------------------------------------------------------- */
+.s-contact {
+    background-color: #151515;
+    background-image: url("../images/contact-bg.jpg");
+    background-repeat: no-repeat;
+    background-position: center, center;
+    padding-top: 15rem;
+    padding-bottom: 12rem;
+    color: rgba(255, 255, 255, 0.5);
+    position: relative;
+}
+
+.s-contact .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: .8;
+    background-color: #151515;
+}
+
+.s-contact .form-field {
+    position: relative;
+}
+
+.s-contact .form-field:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.s-contact .form-field label {
+    font-family: "montserrat-light", sans-serif;
+    font-size: 1rem;
+    line-height: 2.4rem;
+    position: absolute;
+    bottom: -0.3rem;
+    right: .6rem;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    padding: 0 2rem;
+    margin: 0;
+    color: #FFFFFF;
+    background: #39b54a;
+}
+
+.s-contact .form-field label::after {
+    content: "";
+    position: absolute;
+    left: -5px;
+    top: 50%;
+    margin-top: -6px;
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    border-right: 5px solid #39b54a;
+}
+
+.contact__line {
+    display: block;
+    width: 2px;
+    height: 20.4rem;
+    background-color: #39b54a;
+    position: absolute;
+    left: 50%;
+    top: -10.2rem;
+    margin-left: -1px;
+}
+
+.contact-content {
+    max-width: 1000px;
+    background-color: rgba(0, 0, 0, 0.2);
+    color: rgba(255, 255, 255, 0.4);
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+    font-family: "montserrat-light", sans-serif;
+    font-size: 1.5rem;
+    line-height: 2;
+    position: relative;
+}
+
+.contact-content h3 {
+    margin-top: 0;
+    margin-bottom: 6.6rem;
+    color: #FFFFFF;
+}
+
+.contact-content h5 {
+    margin-top: 0;
+    color: #39b54a;
+}
+
+.contact-content input[type="email"],
+.contact-content input[type="number"],
+.contact-content input[type="search"],
+.contact-content input[type="text"],
+.contact-content input[type="tel"],
+.contact-content input[type="url"],
+.contact-content input[type="password"],
+.contact-content textarea,
+.contact-content select {
+    color: rgba(255, 255, 255, 0.6);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+    margin-bottom: .9rem;
+}
+
+.contact-content input[type="email"]:focus,
+.contact-content input[type="number"]:focus,
+.contact-content input[type="search"]:focus,
+.contact-content input[type="text"]:focus,
+.contact-content input[type="tel"]:focus,
+.contact-content input[type="url"]:focus,
+.contact-content input[type="password"]:focus,
+.contact-content textarea:focus,
+.contact-content select:focus {
+    color: #FFFFFF;
+    border-bottom: 1px solid #39b54a;
+}
+
+.contact-content button,
+.contact-content .btn {
+    margin-top: 3.6rem;
+}
+.contact-content input::-webkit-input-placeholder,
+.contact-content select::-webkit-input-placeholder,
+.contact-content textarea::-webkit-input-placeholder {
+    color: #4f4f4f;
+}
+
+.contact-content input:-moz-placeholder,
+.contact-content select:-moz-placeholder,
+.contact-content textarea:-moz-placeholder {
+    color: #4f4f4f;    /* Firefox 18- */
+}
+
+.contact-content input::-moz-placeholder,
+.contact-content select::-moz-placeholder,
+.contact-content textarea::-moz-placeholder {
+    color: #4f4f4f;    /* Firefox 19+ */
+}
+
+.contact-content input:-ms-input-placeholder,
+.contact-content select:-ms-input-placeholder,
+.contact-content textarea:-ms-input-placeholder {
+    color: #4f4f4f;
+}
+
+.contact-content input.placeholder,
+.contact-content select.placeholder,
+.contact-content textarea.placeholder {
+    color: #4f4f4f !important;
+}
+.contact-primary, .contact-secondary {
+    float: left;
+    padding: 0 5rem;
+}
+
+.contact-primary {
+    width: 65%;
+}
+
+.contact-primary #contactForm {
+    margin-top: -1.5rem;
+}
+
+.contact-secondary {
+    width: 35%;
+}
+
+.contact-secondary::before {
+    content: "";
+    display: block;
+    width: 35%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    background-color: #121212;
+}
+
+.contact-secondary .contact-info {
+    position: relative;
+}
+
+.contact-secondary .cinfo {
+    margin-bottom: 4.8rem;
+}
+
+.contact-social {
+    list-style: none;
+    display: inline-block;
+    margin: 0;
+    font-size: 2rem;
+}
+
+.contact-social li {
+    margin-right: 15px;
+    padding-left: 0;
+    display: inline-block;
+}
+
+.contact-social li a {
+    color: white;
+}
+
+.contact-social li a:hover, 
+.contact-social li a:focus {
+    color: #39b54a;
+}
+
+.contact-social li:last-child {
+    margin: 0;
+}
+
+.message-warning, 
+.message-success {
+    display: none;
+    background: #111111;
+    font-size: 1.5rem;
+    line-height: 2;
+    padding: 3rem;
+    margin-bottom: 3.6rem;
+    width: 100%;
+}
+
+.message-warning {
+    color: #ff6163;
+}
+
+.message-success {
+    color: #39b54a;
+}
+
+.message-warning i, .message-success i {
+    margin-right: 10px;
+    font-size: 1.2rem;
+}
+
+/*-----------HEADER-------------*/
+#header-nav {
+  background-color: #1C2331;/*set header bkg rest styles in this are not reqd*/
+  border-radius: 0;
+  border: 0;
+  margin-top: 0;
+    border-color: transparent;
+}
+
+
+.navbar-brand h2 {
+    /* name*/
+    font-family: 'Pacifico', cursive;
+    color: white;
+    font-size: 2em;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px #222;
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: .75;
+}
+
+.navbar-brand a:hover,
+.navbar-brand a:focus {
+    text-decoration: none;
+}
+
+.nav-item a{
+    color: white;
+}
+
+#nav-list{
+    margin-top: 10px;
+    font-weight: 500;
+}
+
+#nav-list a{
+    color: black;
+    text-align: center;
+}
+
+#nav-list a:hover{
+    color: red;
+}
+
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar{
+    border: 1px solid red;
+}
+
+.navbar-header button.navbar-toggle{
+    clear:both;
+    margin-top: -30px;
+}
+
+/*---------comic series------------*/
+.intro-img{
+    background-image: url(../images/batman.jpg);
+    
+    /* Full height */
+    height: 500px; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;  
+}
+
+.imgs img{
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 0;
+    padding-right: 0;
+    margin-top: 20px;
+    height: 600px;
+    width: 100%;
+}
+
+.img1 img, .img2 img, .im3 img, .img4 img{
+    z-index: 20 !important;
+}
+
+@media (max-width: 767px) {
+    .imgs img{
+        height: 400px;
+    }
+    .prod-heading{
+        font-size: 30px;
+    }
+}
+
+.desc{
+    padding: 0 25px 25px 15px;
+    color: white;
+}
+
+.desc-heading{
+    font-size: 25px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.desc-content{
+    font-family: 'Gloria Hallelujah', cursive;
+}
+
+.prod-heading{
+    margin: auto;
+    text-align: center;
+    color: red;
+    font-size: 40px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.prod-conclude{
+    margin-left: 20px;
+}
+
+.prod-conclude span{
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.prod-conclude span strong{
+    font-size: 25px;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.subs-btn:hover {
+    background-color: white;
+}
+
+.display-2{
+    color: white;
+    margin: auto;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}
+
+.footer-heading h2{
+    font-family: 'Pacifico', cursive;
+    color: white;
+    margin-top: 0;
+}
+
+/***********add media query for products***********/
+
+
+
+
+/* ------------------------------------------------------------------- 
+ * responsive:
+ * contact
+ * ------------------------------------------------------------------- */
+@media only screen and (max-width: 1200px) {
+    .contact-content {
+        max-width: 900px;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .contact-content {
+        max-width: 700px;
+    }
+    .contact-primary, .contact-secondary {
+        float: none;
+        width: 100%;
+    }
+    .contact-primary #contactForm {
+        margin-top: -1.5rem;
+        margin-bottom: 7.2rem;
+    }
+    .contact-secondary .hide-on-fullwidth {
+        display: none;
+    }
+    .contact-secondary::before {
+        display: none;
+    }
+    
+}
+
+@media only screen and (max-width: 800px) {
+    .contact-content h3 {
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .s-contact {
+        padding-top: 12rem;
+        padding-bottom: 0;
+    }
+    .contact__line {
+        height: 14.4rem;
+        top: -7.2rem;
+    }
+    .contact-content {
+        padding-bottom: 12rem;
+        text-align: center;
+    }
+    .contact-primary, .contact-secondary {
+        padding: 0 20px;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .contact-primary, .contact-secondary {
+        padding: 0 5px;
+    }
+}
+
+
+
+/* ===================================================================
+ * # footer
+ *
+ * ------------------------------------------------------------------- */
+footer {
+    padding: 9rem 0 6rem;
+    font-family: "montserrat-light", sans-serif;
+    font-size: 15px;
+    line-height: 2;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.3);
+    margin-bottom: 0;
+    padding-bottom: 2px;
+}
+
+footer h4 {
+    color: #FFFFFF;
+    font-size: 1.6rem;
+    line-height: 1.313;
+    margin-top: 0;
+    margin-bottom: 3.6rem;
+}
+
+footer a {
+    color: #FFFFFF;
+}
+
+footer a:hover, footer a:focus, footer a:active {
+    color: #39b54a;
+}
+
+footer .row {
+    max-width: 980px;
+}
+
+
+/* --------------------------------------------------------------- 
+ * ## footer main
+ * --------------------------------------------------------------- */
+.footer-main {
+    text-align: left;
+}
+
+.footer-main .left {
+    padding-right: 40px;
+}
+
+.footer-main .right {
+    padding-left: 40px;
+}
+
+.footer-logo {
+    display: block;
+    margin: -.6rem 0 3.6rem 0;
+    padding: 0;
+    outline: 0;
+    border: none;
+    width: 85px;
+    height: 28px;
+    background: url("../images/logo-footer.png") no-repeat center;
+    background-size: 85px 28px;
+    font: 0/0 a;
+    text-shadow: none;
+    color: transparent;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.footer-subscribe .subscribe-form {
+    margin: 0;
+    margin-top: 60px;
+    padding: 0;
+    position: relative;
+}
+
+.footer-subscribe #mc-form {
+    width: 100%;
+}
+
+.footer-subscribe #mc-form input[type="email"] {
+    width: 100%;
+    height: 5.4rem;
+    padding: 1.2rem 160px 1.2rem 60px;
+    background: url(../images/email-icon.png) 20px center no-repeat, rgba(0, 0, 0, 0.1);
+    background-size: 24px 16px, auto;
+    border: none;
+    margin-bottom: 1.8rem;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.footer-subscribe #mc-form input[type="email"]:focus {
+    color: #FFFFFF;
+}
+
+.footer-subscribe #mc-form input[type="email"]::-webkit-input-placeholder {
+    color: rgba(255, 255, 255, 0.2);
+}
+
+.footer-subscribe #mc-form input[type="email"]:-moz-placeholder {
+    color: rgba(255, 255, 255, 0.2);
+    /* Firefox 18- */
+}
+
+.footer-subscribe #mc-form input[type="email"]::-moz-placeholder {
+    color: rgba(255, 255, 255, 0.2);
+    /* Firefox 19+ */
+}
+
+.footer-subscribe #mc-form input[type="email"]:-ms-input-placeholder {
+    color: rgba(255, 255, 255, 0.2);
+}
+
+.footer-subscribe #mc-form input[type="email"].placeholder {
+    color: rgba(255, 255, 255, 0.2) !important;
+}
+
+.footer-subscribe #mc-form input[type=submit] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: #FFFFFF;
+    background: #39b54a;
+    border-color: #39b54a;
+    padding: 0 20px;
+}
+
+.footer-subscribe #mc-form label {
+    color: #FFFFFF;
+    font-family: "montserrat-regular", sans-serif;
+    font-size: 1.3rem;
+    padding: 0 2rem;
+}
+
+.footer-subscribe #mc-form label i {
+    padding-right: 6px;
+}
+
+
+/* ---------------------------------------------------------------
+ * ## footer bottom
+ * --------------------------------------------------------------- */
+.footer-bottom {
+    margin-top: 5.4rem;
+    text-align: center;
+    font-size: 14px;
+}
+
+.footer-bottom .copyright span {
+    display: inline-block;
+    margin-bottom: 0;
+}
+
+.footer-bottom .copyright span::after {
+    content: "|";
+    display: inline-block;
+    padding: 0 1rem 0 1.2rem;
+    color: rgba(255, 255, 255, 0.05);
+}
+
+
+.footer-bottom .copyright span:last-child::after {
+    display: none;
+}
+
+.about-comp, .notify{
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+}
+
+.copyright{
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+/* ------------------------------------------------------------------- 
+ * ## go to top
+ * ------------------------------------------------------------------- *
+.go-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 600;
+    display: none;
+}
+
+.go-top a, .go-top a:visited {
+    text-decoration: none;
+    border: 0 none;
+    display: block;
+    height: 60px;
+    width: 60px;
+    line-height: 60px;
+    text-align: center;
+    background: black;
+    color: rgba(255, 255, 255, 0.5);
+    text-align: center;
+    text-transform: uppercase;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.go-top a i, .go-top a:visited i {
+    font-size: 18px;
+    line-height: inherit;
+}
+
+.go-top a:hover, .go-top a:focus {
+    color: #FFFFFF;
+}
+
+*/
+/* ------------------------------------------------------------------- 
+ * responsive:
+ * footer
+ * ------------------------------------------------------------------- */
+@media only screen and (max-width: 900px) {
+    .footer-main .left {
+        padding-right: 20px;
+    }
+    .footer-main .right {
+        padding-left: 20px;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    footer .row {
+        max-width: 600px;
+    }
+    .footer-main .left {
+        padding-right: 15px;
+        margin-bottom: 4.2rem;
+    }
+    .footer-main .right {
+        padding-left: 15px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .footer-main .left {
+        padding-right: 10px;
+    }
+    .footer-main .right {
+        padding-left: 10px;
+    }
+    .footer-logo {
+        margin: -.6rem auto 3.6rem;
+    }
+    .footer-bottom {
+        padding-bottom: .6rem;
+    }
+    .footer-bottom .copyright span {
+        display: block;
+    }
+    .footer-bottom .copyright span::after {
+        display: none;
+    }
+    .go-top {
+        right: 0;
+        bottom: 0;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .footer-subscribe #mc-form input[type="email"] {
+        padding: 1.2rem 20px 1.2rem;
+        background: rgba(0, 0, 0, 0.1);
+        text-align: center;
+    }
+    .footer-subscribe #mc-form input[type=submit] {
+        position: static;
+        width: 100%;
+        margin-bottom: 1.8rem;
+    }
+    .footer-subscribe #mc-form label {
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .footer-main .left {
+        padding-right: 0;
+    }
+    .footer-main .right {
+        padding-left: 0;
+    }
+}

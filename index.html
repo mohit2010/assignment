@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Comics World</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSS
+    ================================================== -->
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/base.css">
+    
+    <link rel="stylesheet" href="css/main.css">
+        
+    <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah|Montserrat|Pacifico|Shadows+Into+Light" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- favicons
+    ================================================== --
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">--
+    <link rel="icon" href="favicon.ico" type="image/x-icon">-->
+</head>
+<body>
+    <header>
+        <nav id="header-nav" class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar">
+       <div class="container">
+           <a class="navbar-brand" ng-href="#/"><h2>COMICS WORLD</h2></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">HOME</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">ABOUT US</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">CONTACT US</a>
+                </li>
+                
+            </ul>
+            <ul class="navbar-nav nav-flex-icons">
+                <li class="nav-item">
+                    <a class="nav-link"><i class="fa fa-facebook"></i></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link"><i class="fa fa-twitter"></i></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link"><i class="fa fa-instagram"></i></a>
+                </li>
+            </ul>
+        </div>
+        </div>
+    </nav>
+    </header>
+    <div id="main-content">
+       <div class="intro">
+          <div class="intro-img"></div>
+        </div>
+       <div class="prod-heading">
+           <span>SOME OF OUR WELL KNOWN COMIC SERIES</span>
+       </div>
+        <div class="products">
+           <div class="imgs" id="img1"><img src="images/ironman.jpg" alt=""></div>
+           <div class="desc"><span class="desc-heading">The Iron Man</span><br><p class="desc-content">A wealthy American business magnate, playboy, and ingenious scientist, Anthony Edward "Tony" Stark suffers a severe chest injury during a kidnapping. When his captors attempt to force him to build a weapon of mass destruction, he instead creates a powered suit of armor to save his life and escape captivity. Later, Stark develops his suit, adding weapons and other technological devices he designed through his company, Stark Industries. He uses the suit and successive versions to protect the world as Iron Man. Although at first concealing his true identity, Stark eventually declared that he was, in fact, Iron Man in a public announcement.</p></div>            
+        </div>
+        <div class="products">
+           <div class="imgs" id="img2"><img src="images/batman.jpg" alt=""></div>
+           <div class="desc"><span class="desc-heading">Batman</span><br><p class="desc-content">Batman operates in the fictional Gotham City with assistance from various supporting characters, including his butler Alfred, police commissioner Gordon, and vigilante allies such as Robin. Unlike most superheroes, Batman does not possess any superpowers; rather, he relies on his genius intellect, physical prowess, martial arts abilities, detective skills, science and technology, vast wealth, intimidation, and indomitable will. A large assortment of villains make up Batman's rogues gallery, including his archenemy, the Joker.</p></div>            
+        </div>
+        <div class="products">
+           <div class="imgs" id="img3"><img src="images/Spider-Man.jpg" alt=""></div>
+           <div class="desc"><span class="desc-heading">Spiderman</span><br><p class="desc-content">Bitten by a radioactive spider, high school student Peter Parker gained the speed, strength and powers of a spider. Adopting the name Spider-Man, Peter hoped to start a career using his new abilities. Taught that with great power comes great responsibility, Spidey has vowed to use his powers to help people. </p></div>            
+        </div>
+        <div class="products">
+           <div class="imgs" id="img4"><img src="images/superman.jpg" alt=""></div>
+           <div class="desc"><span class="desc-heading">Superman</span><br><p class="desc-content">The origin story of Superman relates that he was born Kal-El on the planet Krypton, before being rocketed to Earth as an infant by his scientist father Jor-El, moments before Krypton's destruction. Discovered and adopted by a farm couple from Kansas, the child is raised as Clark Kent and imbued with a strong moral compass. Early in his childhood, he displays various superhuman abilities, which, upon reaching maturity, he resolves to use for the benefit of humanity through a "Superman" identity.</p></div>            
+        </div>
+        <div class="prod-conclude">
+           <span>Want to expore more? <br> Wouldn't it be super cool to read them daily? <br> <strong>Take your 30 Day trail today <br> Then get your yearly subscription for &#8377;300 only!!</strong></span>
+           <br>
+           <button class="subs-btn">START YOUR 30 DAY FREE TRIAL</button><br>
+           <button class="subs-btn">SUBSCRIBE FOR 1 YEAR</button>
+       </div>
+    </div>
+    <br>
+    
+    <!--  contact-section ------------>
+    <!-- contact
+    ================================================== -->
+    <section id="contact" class="s-contact">
+
+        <div class="overlay"></div>
+
+        <div class="row section-header" data-aos="fade-up">
+            <div class="col-full">
+                <h1 class="display-2 display-2--light">Got a query?  CONTACT US</h1>
+            </div>
+        </div>
+
+        <div class="row contact-content" data-aos="fade-up">
+            
+            <div class="contact-primary">
+
+                <h3 class="h6">Send Us A Message</h3>
+
+                <form name="contactForm" id="contactForm" method="post" action="" novalidate="novalidate">
+                    <fieldset>
+    
+                    <div class="form-field">
+                        <input name="contactName" type="text" id="contactName" placeholder="Your Name" value="" minlength="2" required="" aria-required="true" class="full-width">
+                    </div>
+                    <div class="form-field">
+                        <input name="contactEmail" type="email" id="contactEmail" placeholder="Your Email" value="" required="" aria-required="true" class="full-width">
+                    </div>
+                    <div class="form-field">
+                        <input name="contactSubject" type="text" id="contactSubject" placeholder="Message" value="" class="full-width">
+                    </div>
+                    
+                    <div class="form-field">
+                        <button class="full-width btn--primary">Submit</button>
+                        
+                    </div>
+    
+                    </fieldset>
+                </form>
+
+                <!-- contact-warning -->
+                
+
+            </div> <!-- end contact-primary -->
+
+            <div class="contact-secondary">
+                <div class="contact-info">
+
+                    <h3 class="h6 hide-on-fullwidth">Contact Info</h3>
+
+                    <div class="cinfo">
+                        <h5>Where to Find Us</h5>
+                        <p>
+                            123 Street<br>
+                            South-Ex, Delhi<br>
+                            94043 INDIA
+                        </p>
+                    </div>
+
+                    <div class="cinfo">
+                        <h5>Email Us At</h5>
+                        <p>
+                            contact@abc.com<br>
+                            info@abc.com
+                        </p>
+                    </div>
+
+                    <div class="cinfo">
+                        <h5>Call Us At</h5>
+                        <p>
+                            Phone: (+91) 555 1212<br>
+                            Mobile: (+91) 555 0100<br>
+                            Fax: (+91) 555 0101
+                        </p>
+                    </div>
+
+                    <ul class="contact-social">
+                        <li>
+                            <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-behance" aria-hidden="true"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-dribbble" aria-hidden="true"></i></a>
+                        </li>
+                    </ul> <!-- end contact-social -->
+
+                </div> <!-- end contact-info -->
+            </div> <!-- end contact-secondary -->
+
+        </div> <!-- end contact-content -->
+
+    </section> <!-- end s-contact -->
+    <!-- footer
+    ================================================== -->
+    <footer>
+
+        <div class="row footer-main">
+
+            <div class="col-six tab-full left footer-desc">
+
+                <div class="footer-heading"><h2>COMICS WORLD</h2></div>
+                <p class="about-comp">COMICS WORLD is a well known company serving since 1970. Our writers work day and night to bring you the fresh content which lifts up your mood and is a good source of entertainment for kids along with it the content is family friendly.</p>
+
+            </div>
+
+            <div class="col-six tab-full right footer-subscribe">
+
+                <h4>Get Notified</h4>
+                <p class="notify">Get latest news and updates right to your mailbox. Just type in your e-mail and we will provide you with latest news from us...</p>
+
+                <div class="subscribe-form">
+                    <form id="mc-form" class="group" novalidate="true">
+                        <input type="email" value="" name="EMAIL" class="email" id="mc-email" placeholder="Email Address" required="">
+                        <input type="submit" name="subscribe" value="Subscribe">
+                    </form>
+                </div>
+
+            </div>
+
+        </div> <!-- end footer-main -->
+
+        <div class="row footer-bottom">
+
+            <div class="col-twelve">
+                <div class="copyright">
+                    <span>&copy; Copyright Comics World 2018</span> 
+                </div>
+
+                <div class="go-top">
+                    <a class="smoothscroll" title="Back to Top" href="#top"><i class="icon-arrow-up" aria-hidden="true"></i></a>
+                </div>
+            </div>
+
+        </div> <!-- end footer-bottom -->
+
+    </footer> <!-- end footer -->
+
+
+    <!-- Java Script
+    ================================================== -->
+    <script src="js/jquery-2.1.4.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>
