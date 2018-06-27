@@ -747,15 +747,19 @@ button::-moz-focus-inner, input::-moz-focus-inner {
     .prod-heading{
         font-size: 30px;
     }
+    .desc{
+    padding: 0 25px 25px 25px !important;
+    }
 }
 
 .desc{
-    padding: 0 25px 25px 15px;
+    padding: 0 50px 25px 50px;
     color: white;
 }
 
 .desc-heading{
     font-size: 25px;
+    letter-spacing: 1.8px;
     font-family: 'Montserrat', sans-serif;
 }
 
